@@ -1,0 +1,7 @@
+/** WRITE YOUR TIPS IN THIS FILE **/
+
+1. The first tip I would suggest would be to play Sokoban, and get a feel for how the game works. Playing cen give a good idea of how boxes get stuck or how states become unsolveable.
+
+2. It is important to really simplify the heuristic as much as possible. Try to isolate cases that are unsolveable, and evaluate all of these cases for each state. This will help any search algorithm to avoid looking deeper into cases with no solution.
+
+3. It is useful to modularize different heuristic checks (i.e. checks for robots, obstacles, goal states, etc.). However, do not try to modify your heuristic to cater to specific states that your search struggles with. If you do this you may end up helping your heuristic for certain problem states, but hurting it for other more general problem states.
