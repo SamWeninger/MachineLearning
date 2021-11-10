@@ -3,4 +3,4 @@
 
 ***
 
-Feel free to use any code in the repository to build personal projects or for learning purposes. Please do not copy any solutions or code from `Assignment*.ipynb` or `Assignment*.pdf` files as they are assignments owned by University of Toronto that I completed.
+Feel free to use any code in the repository to build personal projects or for learning purposes. Please do not copy any solutions or code from files as they are assignments owned by University of Toronto that I completed.
