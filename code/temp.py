@@ -1,0 +1,31 @@
+from bnetbase import * 
+from medicalDiagnosis import * 
+                 
+if __name__ == '__main__':
+    ac.set_evidence('Insufficient')
+    n0 = VE(medical,ac , [])
+    gd.set_evidence('Female')
+    n1 = VE(medical, ac, [gd])
+    bmi.set_evidence('~28.0')
+    n2 = VE(medical, ac, [gd, bmi])
+    hl.set_evidence('YES')
+    n3 = VE(medical, ac, [gd, hl,bmi])
+    co.set_evidence('YES')
+    n4 = VE(medical, ac, [gd, hl, co, bmi])
+    ag.set_evidence('~60')
+    n5 = VE(medical, ac, [gd, bmi, co, bmi, ag])
+    print(n0[0], '<', n1[0], '<', n2[0], '<', n3[0], '<', n4[0], '<', n5[0])
+
+    ac.set_evidence('Sufficient')
+    n0 = VE(medical,ac , [])
+    gd.set_evidence('Male')
+    n1 = VE(medical, ac, [gd])
+    bmi.set_evidence('~18.5')
+    n2 = VE(medical, ac, [gd, bmi])
+    hl.set_evidence('NO')
+    n3 = VE(medical, ac, [gd, hl,bmi])
+    co.set_evidence('NO')
+    n4 = VE(medical, ac, [gd, hl, co, bmi])
+    ag.set_evidence('<40')
+    n5 = VE(medical, ac, [gd, bmi, co, bmi, ag])
+    print(n0[0], '<', n1[0], '<', n2[0], '<', n3[0], '<', n4[0], '<', n5[0])
